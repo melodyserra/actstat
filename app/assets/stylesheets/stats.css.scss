@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #505050!important;
   margin: 0px;
   overflow: hidden;
   font-family:Monospace;
@@ -11,6 +11,10 @@ body {
 
 a {
   color:#0078ff;
+}
+
+.hideme {
+  display:none;
 }
 
 #info {
@@ -28,18 +32,19 @@ a {
   border: solid 5px rgba(255, 255, 255, 0.5);
   border-radius: 200px;
   position: fixed;
-  top: 35%;
-  left: 37%;
+  left:50%;
+  top:50%;
+  margin-left:-150px;
+  margin-top:-150px;
   background: rgba(63, 85, 90, 0.4);
+  display:none;
 }
 
 #comments {
   color:#fff;
   font-size:23px;
-  height:100px;
-  padding-top:50px;
   display: block;
-  /*font-family: 'Nunito', sans-serif;*/
+  line-height:300px;
 }
 
 #playimg {
@@ -55,4 +60,42 @@ a {
   border-bottom-right-radius: 100px;
   border-radius:100px;
   cursor:pointer;
+}
+
+.fa-twitter {
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.fa-facebook {
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.line-separator{
+  height:30px;
+  width: 1px;
+  background:#717171;
+  border-left:1px solid #fff;
+  display: inline-block;
+}
+
+.top_right{
+  position:fixed;
+  top: 0;
+  right:0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.intro-comment {
+  font-size:2em;
+  color:#FFF;
+  margin-top:20%;
+}
+
+#main-stage {
+  display:none;
 }

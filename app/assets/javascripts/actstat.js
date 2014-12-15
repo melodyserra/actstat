@@ -8,8 +8,8 @@ var cnt = 0;
 var comments = new Array();
 
 comments [0] = "The Golden Gate is the world's widest bridge";
-comments [1] = 'comment';
-comments [2] = 'comment';
+comments [1] = "Around 2,200 public school students lack permanent homes";
+comments [2] = "The homeless street and shelter count was 6,436 in 2013";
 comments [3] = 'comment';
 comments [4] = 'comment';
 comments [5] = 'comment';
@@ -34,16 +34,17 @@ var vertex;
 function init() {
 
     $('#center').mouseenter(function(){
-        $('#center p').stop().fadeOut(200),
-        $('#center img').stop().fadeIn(200);
+      $('#center p').stop().fadeOut(200),
+      $('#center img').stop().fadeIn(200);
     });
     $('#center').mouseleave(function(){
       $('#center p').fadeIn(200),
       $('#center img').fadeOut(200);
     });
 
-  container = document.createElement( 'div' );
-  document.body.appendChild( container );
+  // container = document.createElement( 'div' );
+  // document.body.appendChild( container );
+  container = document.getElementById("main-stage");
 
   camera = new THREE.PerspectiveCamera( 55, window.innerWidth / window.innerHeight, 2, 2000 );
   camera.position.z = 500;
