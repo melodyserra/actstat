@@ -1,0 +1,93 @@
+#hero-img {
+  background: url("home6.jpg") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+}
+
+#hero-img h1 {
+  /*padding: 150px 0px;*/
+  color: black;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 50px;
+  text-align:center;
+  margin-top:2px;
+  margin-bottom: 50px;
+  opacity: 1.0;
+  margin-left: 100px;
+}
+
+.about_us {
+  clear: right;
+  padding: 0px 10px 0 10px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 50px;
+}
+
+.main-content {
+  margin-top:70px;
+  margin-bottom:20px;
+  overflow:hidden;
+  position:relative;
+}
+
+.sg-web2-input {
+  width:100%;
+  background:none;
+  border:none;
+  padding:15px 10px;
+  color:#FFF;
+}
+
+.sg-web2-input-light {
+  color:#999;
+}
+
+.sg-web2-input-wrapper {
+  border-top:#4C6B97 1px solid;
+}
+
+.sg-web2-input-wrapper:last-child {
+  border-bottom:#4C6B97 1px solid;
+}
+
+.sg-web2-input-wrapper-light {
+  border-top:#E5E5E5 1px solid;
+}
+
+.sg-web2-input-wrapper-light:last-child {
+  border-bottom:#E5E5E5 1px solid;
+}
+
+.signup-facebook-option div {
+  /*color:#4981B2;*/
+  color:#999;
+}
+
+.signup-left-icon i {
+  border:#A1A1A1 1px solid;
+  padding:10px;
+  border-radius:100%;
+  width:40px;
+  height:40px;
+  line-height:20px;
+  font-size:1.1em;
+  text-align:center;
+}
+
+.signup-right-text {
+  color:#A1A1A1;
+  font-size:1.2em;
+  padding-top:10px;
+  float: left;
+}
+
+.small-column-left {
+  float:left;
+  width:45px;
+}
+
