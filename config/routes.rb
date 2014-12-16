@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'nonprofit/index'
+
   get "profile" => "profiles#index"
 
   get "stats" => "profiles#stats"

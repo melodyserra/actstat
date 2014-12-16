@@ -6,7 +6,6 @@ body {
   font-size:13px;
   text-align:center;
   font-weight: bold;
-  text-align:center;
 }
 
 a {
@@ -36,7 +35,9 @@ a {
   top:50%;
   margin-left:-150px;
   margin-top:-150px;
-  background: rgba(63, 85, 90, 0.4);
+  background: rgba(63, 85, 90, 0.9);
+  /*background: rgba(63, 85, 90, 1);*/
+  /*border: solid 5px rgba(255, 255, 255, 1);*/
   display:none;
 }
 
@@ -44,7 +45,7 @@ a {
   color:#fff;
   font-size:23px;
   display: block;
-  line-height:300px;
+  margin-top:30%;
 }
 
 #playimg {
