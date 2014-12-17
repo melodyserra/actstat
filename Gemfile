@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem "font-awesome-rails"
+gem "pry-rails"
 gem "better_errors"
 gem "binding_of_caller"
 

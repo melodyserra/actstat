@@ -37,7 +37,6 @@ var hblur, vblur;
 var vertex;
 
 function init() {
-
   $('#center').mouseenter(function(){
     $('#center p').stop().fadeOut(200);
     $('#center img').stop().fadeIn(200);
@@ -65,7 +64,7 @@ function init() {
       vertex = new THREE.Vector3();
       vertex.x = i*-2 ;
       vertex.y = i*-2;
-      vertex.z =  i*-3
+      vertex.z =  i*-3;
       geometry.vertices.push( vertex );
       //change color of particles
       colors[ i ] = new THREE.Color( 0xffffff );
@@ -106,26 +105,26 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-var cmnt = 0
+var cmnt = 0;
 function onDocumentMouseMove( event ) {
 
   mouseX = event.clientX - windowHalfX;
   mouseY = event.clientY - windowHalfY;
 
-  cnt++
+  cnt++;
   if(cnt > 5){
-    cnt = 0
-    cmnt += 1
+    cnt = 0;
+    cmnt += 1;
   }
 //particles moving with mouse
 
 //change comments on mouse move
 
   if(cmnt > comments.length-1){
-    cmnt = 0
-    document.getElementById('comments').innerHTML = comments[cmnt]
+    cmnt = 0;
+    document.getElementById('comments').innerHTML = comments[cmnt];
   }
-    document.getElementById('comments').innerHTML = comments[cmnt]
+    document.getElementById('comments').innerHTML = comments[cmnt];
 }
 
 function onDocumentTouchStart( event ) {
@@ -153,7 +152,7 @@ function animate() {
 
 function render() {
   var time = Date.now() * 0.00005;
-  var clock = new THREE.Clock()
+  var clock = new THREE.Clock();
   var delta = clock.getDelta();
 
 //particles move randomly
@@ -163,35 +162,35 @@ function render() {
     particles.geometry.vertices[i].x = 1000 * Math.cos( time + i );
     if(particles.geometry.vertices[i].x < windowHalfX-600){
       colors[i] = new THREE.Color( 0xffffff );
-      colors[i].setHSL(1, 0.8, 0.6 )
-      geometry.colors = colors
+      colors[i].setHSL(1, 0.8, 0.6);
+      geometry.colors = colors;
       }
-        if(particles.geometry.vertices[i].x > (windowHalfX+100)){
-          colors[ i ] = new THREE.Color( 0xffffff );
-          colors[i].setHSL(1, 0.5, 0.6 )
-          material = new THREE.PointCloudMaterial( { size: 50, map: sprite, vertexColors: THREE.VertexColors,blending: THREE.AdditiveBlending , transparent: true } );
-            geometry.colors = colors
-        }
-        else{
-          colors[ i ] = new THREE.Color( 0xffffff );
-          colors[i].setHSL(1, 1, 1)
-          geometry.colors = colors
-        }
-        particles.geometry.vertices[i].y = 1000 * Math.sin( time + i * 1.1 );
-        particles.geometry.verticesNeedUpdate = true;
+    if(particles.geometry.vertices[i].x > (windowHalfX+100)){
+      colors[ i ] = new THREE.Color( 0xffffff );
+      colors[i].setHSL(1, 0.5, 0.6);
+      material = new THREE.PointCloudMaterial( { size: 50, map: sprite, vertexColors: THREE.VertexColors,blending: THREE.AdditiveBlending , transparent: true } );
+        geometry.colors = colors;
     }
+    else{
+      colors[ i ] = new THREE.Color( 0xffffff );
+      colors[i].setHSL(1, 1, 1);
+      geometry.colors = colors;
+    }
+    particles.geometry.vertices[i].y = 1000 * Math.sin( time + i * 1.1 );
+    particles.geometry.verticesNeedUpdate = true;
+  }
 
 //particles moving with mouse
   for(var k = 0; k < 1000; k++){
     if(particles.geometry.vertices[k].x > windowHalfX+600){
       colors[k] = new THREE.Color( 0xffffff );
-      colors[k].setHSL(0.1, 0.8, 0.6)
-      geometry.colors = colors
+      colors[k].setHSL(0.1, 0.8, 0.6);
+      geometry.colors = colors;
     }
     if(particles.geometry.vertices[k].x < windowHalfX-800){
       colors[k] = new THREE.Color( 0xffffff );
-      colors[k].setHSL(0.1, 0.5, 0.8  )
-      geometry.colors = colors
+      colors[k].setHSL(0.1, 0.5, 0.8);
+      geometry.colors = colors;
     }
     particles.geometry.vertices[k].x += ( mouseX/2  ) * 0.2;
     particles.geometry.vertices[k].y += ( -mouseY/2 ) * 0.2;
@@ -199,13 +198,13 @@ function render() {
   for(var k = 1000; k < 2000; k++){
     if(particles.geometry.vertices[k].x < windowHalfX-1000){
         colors[k] = new THREE.Color( 0xffffff );
-        colors[k].setHSL(0.1, 0.5, 0.8 )
-        geometry.colors = colors
+        colors[k].setHSL(0.1, 0.5, 0.8);
+        geometry.colors = colors;
       }
     if(particles.geometry.vertices[k].x > windowHalfX-200){
         colors[k] = new THREE.Color( 0xffffff );
-        colors[k].setHSL(1, 0.5, 0.6 )
-        geometry.colors = colors
+        colors[k].setHSL(1, 0.5, 0.6);
+        geometry.colors = colors;
     }
     particles.geometry.vertices[k].x += ( mouseX/2  ) * 0.1;
     particles.geometry.vertices[k].y += ( -mouseY/2 ) * 0.1;
@@ -213,15 +212,15 @@ function render() {
   for(var k = 2000; k < 4000; k++){
     if(particles.geometry.vertices[k].x < windowHalfX-1500){
       colors[k] = new THREE.Color( 0xffffff );
-      colors[k].setHSL(0.1, 0.5, 0.8 )
-      geometry.colors = colors
+      colors[k].setHSL(0.1, 0.5, 0.8);
+      geometry.colors = colors;
     }
     if(particles.geometry.vertices[k].x > windowHalfX+900){
       colors[k] = new THREE.Color( 0xffffff );
-      colors[k].setHSL(1, 0.5, 0.6 )
-      geometry.colors = colors
+      colors[k].setHSL(1, 0.5, 0.6);
+      geometry.colors = colors;
     }
-    particles.geometry.vertices[k].x += camera.position.x
+    particles.geometry.vertices[k].x += camera.position.x;
     particles.geometry.vertices[k].y += camera.position.y;
   }
 
