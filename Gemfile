@@ -23,7 +23,10 @@ gem 'omniauth-facebook'
 
 gem 'figaro'
 
-gem "httparty"
+# gem "httparty"
+
+gem 'guidestar'
+gem 'nokogiri'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

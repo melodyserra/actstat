@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141212082640) do
+ActiveRecord::Schema.define(version: 20141217190752) do
+
+  create_table "favorites", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "nonprofit_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "nonprofits", force: true do |t|
+    t.string   "name"
+    t.string   "mission"
+    t.string   "website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "provider"
