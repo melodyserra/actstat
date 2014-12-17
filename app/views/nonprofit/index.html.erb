@@ -1,4 +1,6 @@
 <h1>Nonprofit#index</h1>
 <p>Find me in app/views/nonprofit/index.html.erb</p>
 
-<%= @body%>
+<% @orgs.each do |org| %>
+  <%= org[:name] %>
+<% end %>
