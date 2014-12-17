@@ -1,0 +1,60 @@
+<div id="header-wrapper">
+  <header id="header" class="5grid-layout">
+    <div class="row">
+      <div class="12u" id="logo">
+        <!-- Logo -->
+        <h1><a href="#" class="mobileUI-site-name">ActStat</a></h1>
+        <p>discover your city</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="12u">
+        <!-- Nav -->
+        <nav class="mobileUI-site-nav"> <a href="index.html" class="active">Homepage</a> <a href="twocolumn1.html">Sign In</a></nav>
+      </div>
+    </div>
+  </header>
+</div>
+<div id="banner-wrapper">
+  <div class="5grid-layout">
+    <section>
+      <div id="banner">Choose a Random Statistic</div>
+    </section>
+  </div>
+</div>
+<div id="feature-wrapper">
+  <div class="12u">
+    <div id="feature-content" class="5grid-layout">
+      <div class="row">
+        <div class="3u">
+          <section>
+            <p><a href="#"><img src="images/pics02.jpg" alt=""></a></p>
+            <h2>Mauris vulputate</h2>
+            <p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+          </section>
+        </div>
+        <div class="3u">
+          <section>
+            <p><a href="#"><img src="images/pics03.jpg" alt=""></a></p>
+            <h2>Mauris vulputate</h2>
+            <p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+          </section>
+        </div>
+        <div class="3u">
+          <section>
+            <p><a href="#"><img src="images/pics04.jpg" alt=""></a></p>
+            <h2>Mauris vulputate</h2>
+            <p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+          </section>
+        </div>
+        <div class="3u">
+          <section>
+            <p><a href="#"><img src="images/pics05.jpg" alt=""></a></p>
+            <h2>Mauris vulputate</h2>
+            <p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,48 @@
-// Place all the styles related to the nonprofit controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+
+.txt-right {
+  text-align:right;
+}
+
+.margin-top-25 {
+  margin-top:25px;
+}
+
+.margin-top-10 {
+  margin-top:10px;
+}
+
+.actstat-header {
+  background-color:#000;
+  padding:20px 0;
+}
+
+.actstat-logo {
+  font-family: "Kaushan Script", Arial;
+  font-size: 3em;
+  color:#FFF;
+}
+
+.small-header-text {
+  color:#FFF;
+  padding-top:25px;
+}
+
+.actstat-header-link {
+  color:#FFF;
+  padding-top:20px;
+}
+
+.medium-title {
+  font-size:1.5em;
+}
+
+.actstat-header-link:hover {
+  text-decoration:none;
+  color:#DDD;
+}
+
+.banner-text {
+  padding:100px 0;
+  font-size:3em;
+}

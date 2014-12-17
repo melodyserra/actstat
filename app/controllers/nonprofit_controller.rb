@@ -12,15 +12,15 @@ class NonprofitController < ApplicationController
 
     # @orgs = org_info
 
-    response = HTTParty.get("https://data.guidestar.org/v1/search.json?q=organization_name:guide*")
+    # response = HTTParty.get("https://data.guidestar.org/v1/search.json?q=organization_name:guide*")
 
-    res_org_info = response[""]
-    org_info = []
+    # res_org_info = response[""]
+    # org_info = []
 
-    res_org_info.each do |org|
-      org_info << { name: org["Organization Name"]}
-    end
+    # res_org_info.each do |org|
+    #   org_info << { name: org["Organization Name"]}
+    # end
 
-    @orgs = org_info
+    # @orgs = org_info
   end
 end
