@@ -4,6 +4,7 @@ class CreateNonprofits < ActiveRecord::Migration
       t.string :name
       t.string :mission
       t.string :website
+      t.string :image
 
       t.timestamps
     end

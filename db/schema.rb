@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20141217212240) do
     t.string   "name"
     t.string   "mission"
     t.string   "website"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

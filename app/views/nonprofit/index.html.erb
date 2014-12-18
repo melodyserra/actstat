@@ -33,9 +33,27 @@
   Choose a Random Statistic
 </div>
 
-<div class="container">
+<div class="container margin-bottom-50">
   <div class="row">
-    <div class="col-sm-3">
+    <% @non.each do |n| %>
+      <div class="col-sm-3">
+        <!-- <div class="non-img"> -->
+          <img class= "non-img" src="<%= n.image %>" alt="" class="img-responsive">
+        <!-- </div> -->
+        <div class="margin-top-10 medium-title">
+          <%= n.name%>
+        </div>
+        <div class="margin-top-10">
+          <input type="hidden" id="non-description-<%= n.id %>" value="<%= n.mission %>" />
+          <%= n.mission[0..150] %>...
+          <a href="#" class="toggle-non-desc-modal" id="<%= n.id %>">Read More</a>
+        </div>
+        <div class="margin-top-10">
+          <a href="<%= n.website%>">Website</a>
+        </div>
+      </div>
+    <% end %>
+    <!-- <div class="col-sm-3">
       <div>
         <img src="" class="img-responsive" />
       </div>
@@ -78,6 +96,25 @@
       <div class="margin-top-10">
         Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
+
+<div id="non-desc-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">More Information</h4>
+      </div>
+      <div class="modal-body">
+        <p id="non-desc-modal-body">
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

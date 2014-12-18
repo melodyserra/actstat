@@ -10,8 +10,8 @@ $(document).ready(function() {
               $("#center").fadeIn(500);
             });
           });
-        });
+        }).css('display','table-cell');
       });
     }, 1000);
-  });
+  }).css('display','table-cell');
 });

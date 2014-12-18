@@ -1,19 +1,21 @@
-<div id="main-stage">
-</div>
+<div class="outer">
+  <div id="main-stage">
+  </div>
 
-<div id="content-container">
-</div>
+  <div id="content-container">
+  </div>
 
-<div class="hideme intro-comment" id="intro-comment-1">
-  City lights, and busy lives. Let's stop for a moment and discover what is happening in our community.
-</div>
-
-<div class="hideme intro-comment" id="intro-comment-2">
-  Move your cursor in the next screen and you will see different statistics about your city. You can click on any statistic that stands apart to you and see which nonprofits are addressing them.
+<!-- <div class="outer"> -->
+  <div class="hideme intro-comment" id="intro-comment-1">
+    City lights, and busy lives. Let's stop for a moment and discover what is happening in our community.
+  </div>
+  <div class="hideme intro-comment" id="intro-comment-2">
+    Move your cursor in the next screen and you will see different statistics about your city. You can click on any statistic that stands apart to you and see which nonprofits are addressing them.
+  </div>
 </div>
 
 <div id="center">
-  <p id="comments"></p>
+  <a href="/nonprofit/index"><p id="comments"></p></a>
   <img src="img/play.png" width="100" height="100" id="playimg">
 </div>
 
@@ -22,8 +24,9 @@
     <%= link_to " ", "/auth/facebook", id: "sign_in",class: "fa fa-facebook fa-3x" %>
   </i>
   <div class="line-separator"></div>
-  <i class="fa fa-twitter fa-3x"></i>
+  <a href="https://twitter.com/act_stat" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
 </div>
+
 
 <!-- <form>
   <div class="input-prepend">

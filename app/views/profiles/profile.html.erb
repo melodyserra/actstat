@@ -1,40 +1,20 @@
-  <div class="container" id="hero-img">
-    <h1>actstat</h1>
-  </div>
-
-    <div class="getstarted" id="start" role="article">
-
-    <p class="about_us">A new way to dicover your city and see what others are doing to make it a better place</p>
-
-    <div class="main-content">
-    <div class="container">
-      <div class="margin-top-10">
-        <div class="sg-web2-input-wrapper-light">
-          <input id="signup-firstname" class="sg-web2-input sg-web2-input-light" type="text" placeholder="First Name" data-role="none" />
+<div class="theBody">
+    <div class="container text-center">
+      <div class="row row-table row-full-height text-center">
+        <div class="col-12 col-middle">
+        <%= image_tag(@current_user.image, :class => "image") %>
         </div>
-        <div class="sg-web2-input-wrapper-light">
-          <input id="signup-lastname" class="sg-web2-input sg-web2-input-light" type="text" placeholder="Last Name" data-role="none" />
-        </div>
-        <div class="sg-web2-input-wrapper-light">
-          <input id="signup-city" class="sg-web2-input sg-web2-input-light" type="text" placeholder="Your City" data-role="none" />
-        </div>
-      </div>
-      <br>
-      <div class="center-constrain">
-        <div class="column-container margin-top-50 signup-facebook-option">
-          <div class="small-column-left signup-left-icon">
-            <i class="fa fa-facebook"></i>
-          </div>
+        <p class="welcome"> Welcome <strong><%= @current_user.first_name %></strong>!</p>
+      </div> <!-- end of row div -->
 
-            <div id="user_nav">
-              <%= link_to "Continue with Facebook", "/auth/facebook", id: "sign_in",class: "big-column-right signup-right-text" %>
-            </div>
+      <%= button_to('Sign out', signout_path, :class => 'btn btn-large btn-default', :method => :get, id: "sign_out")  %>
 
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- <h3 class="title">My Groups</h3> -->
 
-    </div>
+    <!-- <div class="do"> -->
+    <br>
+    <hr id="divider"> <!-- adding space and line before create new group -->
+    <br>
+
 
 

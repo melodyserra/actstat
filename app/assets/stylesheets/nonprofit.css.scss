@@ -12,6 +12,10 @@
   margin-top:10px;
 }
 
+.margin-bottom-50 {
+  margin-bottom:50px;
+}
+
 .actstat-header {
   background-color:#000;
   padding:20px 0;
@@ -34,7 +38,7 @@
 }
 
 .medium-title {
-  font-size:1.5em;
+  font-size:1.2em;
 }
 
 .actstat-header-link:hover {
@@ -45,4 +49,11 @@
 .banner-text {
   padding:100px 0;
   font-size:3em;
+}
+
+.non-img {
+  height: 150px;
+  width: 180px;
+  background-size:cover !important;
+
 }
