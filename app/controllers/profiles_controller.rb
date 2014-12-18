@@ -10,4 +10,8 @@ class ProfilesController < ApplicationController
     render "stats"
   end
 
+  def profile
+    if @current_user
+    end
+  end
 end

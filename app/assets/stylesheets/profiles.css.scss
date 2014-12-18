@@ -1,93 +1,28 @@
-#hero-img {
-  background: url("home6.jpg") no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-  width: 100%;
-  height: 270px;
-}
-
-#hero-img h1 {
-  /*padding: 150px 0px;*/
-  color: black;
-  font-family: 'Petit Formal Script', cursive;
-  font-size: 50px;
-  text-align:center;
-  margin-top:2px;
-  margin-bottom: 50px;
-  opacity: 1.0;
-  margin-left: 100px;
-}
-
-.about_us {
-  clear: right;
-  padding: 0px 10px 0 10px;
-  font-size: 20px;
-  text-align: center;
-  color: black;
-  font-family: 'Quicksand', sans-serif;
-  margin-bottom: 50px;
-}
-
-.main-content {
-  margin-top:70px;
-  margin-bottom:20px;
-  overflow:hidden;
-  position:relative;
-}
-
-.sg-web2-input {
-  width:100%;
-  background:none;
-  border:none;
-  padding:15px 10px;
-  color:#FFF;
-}
-
-.sg-web2-input-light {
-  color:#999;
-}
-
-.sg-web2-input-wrapper {
-  border-top:#4C6B97 1px solid;
-}
-
-.sg-web2-input-wrapper:last-child {
-  border-bottom:#4C6B97 1px solid;
-}
-
-.sg-web2-input-wrapper-light {
-  border-top:#E5E5E5 1px solid;
-}
-
-.sg-web2-input-wrapper-light:last-child {
-  border-bottom:#E5E5E5 1px solid;
-}
-
-.signup-facebook-option div {
-  /*color:#4981B2;*/
-  color:#999;
-}
-
-.signup-left-icon i {
-  border:#A1A1A1 1px solid;
-  padding:10px;
+.image {
+  height: 100%;
+  width: 200px;
   border-radius:100%;
-  width:40px;
-  height:40px;
-  line-height:20px;
-  font-size:1.1em;
-  text-align:center;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  border:#DDD 3px solid;
+  display:block;
+  margin:0 auto;
 }
 
-.signup-right-text {
-  color:#A1A1A1;
-  font-size:1.2em;
-  padding-top:10px;
-  float: left;
+#sign_out {
+  margin: 5px 10px;
+  display: block;
+  background:none;
+  border: 1px solid black;
+  font-family: 'Quicksand', sans-serif;
+  padding:10px;
+  position:absolute;
+  top: 0;
+  right: 0;
 }
 
-.small-column-left {
-  float:left;
-  width:45px;
+.welcome {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
