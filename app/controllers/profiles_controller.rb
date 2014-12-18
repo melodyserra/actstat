@@ -3,6 +3,8 @@ class ProfilesController < ApplicationController
   before_action :current_user
 
   def index
+    @nonprofit = Nonprofit.find(params[:id])
+    @favorites = Favorite.where(user_id: @current_user.id)
     render "profile"
   end
 
@@ -11,7 +13,7 @@ class ProfilesController < ApplicationController
   end
 
   def profile
-    if @current_user
-    end
+    binding.pry
+    @favorites = Favorite.find_by_user_id(@current_user.id)
   end
 end

@@ -7,26 +7,49 @@ var windowHalfY = window.innerHeight / 2;
 var cnt = 0;
 var comments = new Array();
 
-comments [0] = "The Golden Gate Bridge is the world's widest bridge.";
+comments [0] = "914 unaccompanied children and transition age youth are living on the streets.";
 comments [1] = "Around 2,200 public school students lack permanent homes.";
 comments [2] = "The homeless street and shelter count was 6,436 in 2013.";
 comments [3] = "An estimated 15,901 people are living with HIV/AIDS.";
-comments [4] = 'comment';
-comments [5] = 'comment';
-comments [6] = 'comment';
-comments [7] = 'comment';
-comments [8] = 'comment';
-comments [9] = 'comment';
-comments [10] = 'comment';
-comments [11] = 'comment';
-comments [12] = 'comment';
-comments [13] = 'comment';
-comments [14] = 'comment';
-comments [15] = 'comment';
-comments [16] = 'comment';
-comments [17] = 'comment';
-comments [18] = 'comment';
-comments [19] = 'comment';
+comments [4] = "Federal agents confiscated $2 million in cash from 10 Asian massage parlors during a San Francisco raid.";
+comments [5] = "There are at least 90 massage parlors where sex is for sale.";
+comments [6] = "43 of the nation's under-performing schools are in the Bay Area.";
+comments [7] = "65.5 percent of black students and 68.4 percent of Latino students graduated high school last year.";
+comments [8] = "82% of high school students overall gradauted last year.";
+comments [9] = "11% of the homeless population is comprised of veterans.";
+comments [10] = "175 homeless families remain on a wait-list for housing.";
+comments [11] = "Of the people living on the street, 32% report alcohol abuse and 31% drug use.";
+comments [12] = "More than half of children from homeless families have never lived in a permanent home.";
+comments [13] = "The share of Latinos, Asian/Pacific Islanders, and people aged 25-29 years among new HIV diagnoses has increased.";
+comments [14] = "Since the beginning of the epidemic, the city has lost 19,992 people to HIV/AIDS.";
+comments [15] = "Up to 25% of the city’s homeless population consists of families with children.";
+comments [16] = "On average a homeless child is 3 years behind in school.";
+comments [17] = "Homeless children are twice as likely to repeat a grade in school.";
+comments [18] = "Homeless children experience developmental delays at four times the rate of other children.";
+comments [19] = "Nearly 70% of homeless children suffer from chronic illness.";
+
+var links = new Array();
+links [0] = '/nonprofit/index'
+links [1] = '/nonprofit/index'
+links [2] = '/nonprofit/index'
+links [3] = '/nonprofit/index'
+links [4] = '/nonprofit/index'
+links [5] = '/nonprofit/index'
+links [6] = '/nonprofit/index'
+links [7] = '/nonprofit/index'
+links [8] = '/nonprofit/index'
+links [9] = '/nonprofit/index'
+links [10] = '/nonprofit/index'
+links [11] = '/nonprofit/index'
+links [12] = '/nonprofit/index'
+links [13] = '/nonprofit/index'
+links [14] = '/nonprofit/index'
+links [15] = '/nonprofit/index'
+links [16] = '/nonprofit/index'
+links [17] = '/nonprofit/index'
+links [18] = '/nonprofit/index'
+links [19] = '/nonprofit/index'
+
 var particles = new Array();
 var renderPass;
 var effectCopy;
@@ -106,10 +129,26 @@ function onWindowResize() {
 }
 
 var cmnt = 0;
+var lnk = 0;
+var link  = 0;
+var new_link;
 function onDocumentMouseMove( event ) {
 
   mouseX = event.clientX - windowHalfX;
   mouseY = event.clientY - windowHalfY;
+
+  lnk++;
+    if(lnk > 5){
+      lnk = 0;
+      link += 1;
+    }
+    new_link = links[link];
+    //particles moving with mouse
+    //change comments on mouse move
+
+    if(link > links.length-1){
+      lnk = 0;
+    }
 
   cnt++;
   if(cnt > 5){
@@ -144,6 +183,16 @@ function onDocumentTouchMove( event ) {
     mouseY = event.touches[ 0 ].pageY - windowHalfY;
   }
 }
+
+$(document).ready(function () {
+  $('#main-stage').click(function(){
+    var win = window.open(new_link, '_blank');
+    if(win){
+      //Browser has allowed it to be opened
+      win.focus();
+    }
+  });
+});
 
 function animate() {
   requestAnimationFrame( animate );

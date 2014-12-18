@@ -25,15 +25,15 @@ a {
 }
 
 #center {
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
   border: solid 5px rgba(255, 255, 255, 0.5);
   border-radius: 200px;
   position: fixed;
   left:50%;
   top:50%;
-  margin-left:-150px;
-  margin-top:-150px;
+  margin-left:-180px;
+  margin-top:-180px;
   background: rgba(63, 85, 90, 0.9);
   /*background: rgba(63, 85, 90, 1);*/
   /*border: solid 5px rgba(255, 255, 255, 1);*/
@@ -49,8 +49,8 @@ a {
 
 #playimg {
   position:absolute;
-  top:33%;
-  left:33%;
+  top:37%;
+  left:35%;
   display:none;
   border:solid 1px #fff;
   padding:20px;
@@ -90,6 +90,30 @@ a {
   margin-right: 20px;
 }
 
+#bottom_center{
+  position:fixed;
+  bottom: 0;
+  text-align:center;
+}
+
+#sign_out2{
+  text-color: #FFF;
+  margin: 5px 10px;
+  display: block;
+  background:none;
+  border: 1px solid white;
+  font-family: 'Quicksand', sans-serif;
+  padding:10px;
+  text-align:center;
+}
+
+.form-control {
+   font-size: 10px;
+   width: 20px;
+   left: 0;
+   top:0;
+}
+
 body, html {
     height: 100%;
 }
@@ -111,4 +135,17 @@ body, html {
 #main-stage {
   display:none;
   background-color: #505050;
+}
+
+.actstat-input {
+  width:300px;
+  padding:5px;
+  border-radius:5px;
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  background:none;
+  border:#CCC 2px solid;
+  display:none;
+  color:#CCC;
 }

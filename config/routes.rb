@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
+  root 'profiles#stats'
+
   get 'nonprofit/index'
 
-  get "profile" => "profiles#index"
+  get "profiles/:id" => "profiles#index"
 
   get "stats" => "profiles#stats"
 
+  post "/favorite", to: "nonprofit#add_favorite"
   #OMNIAUTH ROUTES
   match 'auth/:provider/callback', to: 'sessions#create', via: :get
   match 'auth/failure', to: redirect('/'), via: :get

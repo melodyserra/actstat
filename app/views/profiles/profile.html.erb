@@ -13,10 +13,23 @@
 
       <!-- <h3 class="title">My Groups</h3> -->
 
+
     <!-- <div class="do"> -->
     <br>
     <hr id="divider"> <!-- adding space and line before create new group -->
     <br>
+   <!--  <div class="name">
+    <%= @nonprofit.name %>
+    </div>
+    <br>
+    <a href="<%= @nonprofit.website %>">Website</a> -->
+    <% @favorites.each do |fav| %>
+    <p>
+      <%= fav.nonprofit.name%>
+      <br>
+      <a href="<%= fav.nonprofit.website%>">Website</a>
+    </p>
+    <% end %>
 <% end %>
 
 
